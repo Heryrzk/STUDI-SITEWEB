@@ -12,9 +12,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.video{
+    width: 30em;
+}
+
 @media (max-width: 991px){
     .sidebar{
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(5px);
     }
+    .video{
+        width: 15em;
+    }
 }
+
