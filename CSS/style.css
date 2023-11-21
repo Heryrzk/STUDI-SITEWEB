@@ -10,7 +10,14 @@ body {
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
+header{
+    flex: 1 0 auto;
+
+}
+
 
 .video{
     width: 30em;
@@ -25,4 +32,10 @@ body {
         width: 15em;
     }
 }
-
+footer{
+    background-color: rgb(167, 167, 167,0.6);
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-style:italic;
+    flex-shrink: 0;
+}
