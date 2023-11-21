@@ -1,0 +1,30 @@
+section{
+    margin: 20px;
+    font-size: 100%;
+}
+section h1{
+    text-align: center;
+    
+    
+
+}
+body {
+    background: url('../Images/Bckgrd2.jpeg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    }
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-style:italic;
+}
