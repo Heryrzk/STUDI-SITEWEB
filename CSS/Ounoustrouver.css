@@ -1,0 +1,115 @@
+main{
+    margin: 20px;
+    font-size: 100%;
+
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid rgb(85, 238, 154);
+}
+
+ul{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+body {
+    background: url('../Images/Bckgrd4.jpg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: space;
+    background-size: cover; 
+
+    
+}
+.gmap-canvas{
+
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+}
+
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+header{
+    flex: 1 0 auto;
+
+}
+
+@media screen and (min-width: 800px){
+    main{display: flex;
+        flex-wrap: wrap;
+    }
+    main section {
+        flex: 1;
+        min-width: 45%;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+}
+
+@media screen and (min-width: 800px){
+    main{
+        width: 780px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    main{
+        width: 1180px;
+    }
+    main section{
+        min-width: 25%;
+    }
+    
+}
+
+
+
+
+
+@media screen and (min-width: 990px){
+    .sidebar{
+        background-color: none;
+        backdrop-filter: none;
+    }
+    main{
+        font-size: 133%;
+    }
+    .nav-link{
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 1800px){
+
+  
+    .nav-link{
+        font-size: 1.3em;
+    }
+}
+
+
+   
+
+footer{
+    background-color: rgba(167, 167, 167, 0.2);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-style:italic;
+    flex-shrink: 0;
+}
