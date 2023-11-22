@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}    
+body {
+    background: url('../Images/Bckgrd3.jpg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: space;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1 0 auto;
+
+}
+
+main section{
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+.ImageChange{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../Images/Log\ 01.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    animation: changeimg 12s infinite ease-in-out ;
+
+}
+.ImageChange1{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../Images/Etudiants.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    animation: changeimg1 20s infinite ease-in-out ;
+
+}
+.ImageChange2{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../Images/Alimentation.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    animation: changeimg2 20s infinite ease-in-out ;
+
+}
+.ImageChange3{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../Images/santé.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    animation: changeimg3 20s infinite ease-in-out ;
+
+}
+.ImageChange4{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../Images/developpement.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    animation: changeimg4 25s infinite ease-in-out ;
+
+}
+
+footer{
+    background-color: rgb(167, 167, 167,0.6);
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-style:italic;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 800px){
+    main{display: flex;
+        flex-wrap: wrap;
+    }
+    main section {
+        flex: 1;
+        min-width: 45%;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+}
+
+@media screen and (min-width: 800px){
+    main{
+        width: 780px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    main{
+        width: 1180px;
+    }
+    main section{
+        min-width: 25%;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 990px){
+    .sidebar{
+        background-color: none;
+        backdrop-filter: none;
+    }
+    .nav-link{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1800px){
+
+    .nav-link{
+        font-size: 1.3em;
+    }
+}
+
+
+@keyframes changeimg{
+
+    0%
+    {
+        background-image: url(../Images/Log\ 01.jpg);
+    }
+    50%
+    {
+        background-image: url(../Images/Log\ 02.jpg);
+    }
+
+}
+@keyframes changeimg1{
+
+    0%
+    {
+        background-image: url(../Images/Etudiants.jpeg);
+    }
+    30%
+    {
+        background-image: url(../Images/Etudiants\ 2.jpeg);
+    }
+    60%
+    {
+        background-image: url(../Images/Etudiants\ 3.jpeg);
+    }
+
+}
+@keyframes changeimg2{
+
+    0%
+    {
+        background-image: url(../Images/Alimentation.jpeg);
+    }
+    30%
+    {
+        background-image: url(../Images/Alimentation02.jpeg);
+    }
+    60%
+    {
+        background-image: url(../Images/Alimentation03.jpeg);
+    }
+
+}
+@keyframes changeimg3{
+
+    0%
+    {
+        background-image: url(../Images/santé.jpeg);
+    }
+    30%
+    {
+        background-image: url(../Images/santé02.jpeg);
+    }
+    60%
+    {
+        background-image: url(../Images/santé03.jpeg);
+    }
+
+}
+@keyframes changeimg4{
+
+    0%
+    {
+        background-image: url(../Images/developpement.jpeg);
+    }
+    25%
+    {
+        background-image: url(../Images/developpement02.jpeg);
+    }
+    50%
+    {
+        background-image: url(../Images/developpement03.jpeg);
+    }
+    75%
+    {
+        background-image: url(../Images/developpement04.jpeg);
+    }
+
+}

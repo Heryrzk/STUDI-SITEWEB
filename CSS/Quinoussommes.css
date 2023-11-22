@@ -35,7 +35,7 @@ header{
         font-size: 133%;
     }
     .nav-link{
-        font-size: 1.35em;
+        font-size: 1.2em;
     }
 }
 @media screen and (min-width: 1800px){
@@ -45,7 +45,7 @@ header{
     }
   
     .nav-link{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 
