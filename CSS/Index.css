@@ -12,7 +12,7 @@ body {
     background: url('../Images/Bckgrd.jpg') rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
     background-position: center;
-    background-repeat: space;
+    background-repeat: space repeat-y;
     background-size: cover; 
     display: flex;
     flex-direction: column;
